@@ -1,0 +1,32 @@
+server:
+  port: 8080
+  servlet:
+    context-path: ${CONTEXT_PATH}
+
+spring:
+  application:
+    name: ${API_NAME}
+
+  datasource:
+    url: jdbc:${DB_TYPE}://${DB}:${MYSQL_PORT}/${MYSQL_DATABASE}
+    username: ${MYSQL_USER}
+    password: ${MYSQL_PASSWORD}
+    driver-class-name: ${MYSQL_DRIVE}
+
+# Configuração de JPA/Hibernate
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+# Configurações de perfil ativo
+  profiles:
+    active: ${PROFILE}
+
+# Configuração do swagger
+springdoc:
+  swagger-ui:
+    path=/swagger-ui:
+      html: ${SWAGGER_LINK}
+
+
