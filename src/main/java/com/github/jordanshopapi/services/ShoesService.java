@@ -11,15 +11,7 @@ import java.util.List;
 
 
 @Service
-public class ShoesService extends AbstractService<Shoes> {
-
-    @Autowired
-    private ShoesRepository shoesRepository;
-
-    @Override
-    protected JpaRepository getRepository() {
-        return shoesRepository;
-    }
+public class ShoesService {
 
 
 

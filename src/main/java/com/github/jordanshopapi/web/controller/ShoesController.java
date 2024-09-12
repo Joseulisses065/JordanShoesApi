@@ -18,12 +18,12 @@ import java.util.List;
 @RestController
 @RequestMapping("/shoes")
 public class ShoesController {
-    @Autowired
+    /*@Autowired
     private ShoesService shoesService;
 
     @GetMapping
     public ResponseEntity<List<ShoesResponseDto>> getAllShoes() {
         List<ShoesResponseDto> shoes = EntityMapper.mapToList(shoesService.findAll(), ShoesResponseDto.class);
         return ResponseEntity.ok().body(shoes);
-    }
+    }*/
 }

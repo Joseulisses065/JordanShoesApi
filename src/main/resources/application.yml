@@ -1,3 +1,5 @@
+cors:
+  originPatterns: http://localhost:3000,http://localhost:8080
 server:
   port: 8080
   servlet:
@@ -13,17 +15,17 @@ spring:
     password: ${MYSQL_PASSWORD}
     driver-class-name: ${MYSQL_DRIVE}
 
-# Configuração de JPA/Hibernate
+# Configuraï¿½ï¿½o de JPA/Hibernate
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
 
-# Configurações de perfil ativo
+# Configuraï¿½ï¿½es de perfil ativo
   profiles:
     active: ${PROFILE}
 
-# Configuração do swagger
+# Configuraï¿½ï¿½o do swagger
 springdoc:
   swagger-ui:
     path=/swagger-ui:
